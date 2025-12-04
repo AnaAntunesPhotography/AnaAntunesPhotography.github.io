@@ -1,0 +1,129 @@
+:root{
+  --bg:#f6f5f3;
+  --muted:#9a9a95;
+  --accent:#2b2b2b;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0;background:var(--bg);color:var(--accent);}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:20px 32px;background:transparent;position:relative;z-index:40}
+
+.site-header .brand{margin:0;font-weight:700;font-family:'Playfair Display', serif;font-size:2.4rem;letter-spacing:0.2px;color:var(--accent)}
+.site-header nav a{margin-left:16px;color:var(--muted);text-decoration:none}
+.site-header nav a:hover{color:var(--accent)}
+
+/* when header overlays dark hero, make text visible */
+.site-header.overlay{
+  background: rgba(255,255,255,0.92);
+  padding: 12px 28px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  backdrop-filter: blur(3px);
+}
+.site-header.overlay .brand, .site-header.overlay nav a{color:var(--accent)}
+.site-header.overlay .brand{text-shadow:none; font-weight:600}
+.site-header.overlay nav a{color:var(--accent);font-weight:600}
+.site-header.overlay nav a:hover{color:var(--accent)}
+
+.carousel{position:relative; /* full viewport hero without vw to avoid overflow */ width:100%; margin:0; overflow:hidden; border-radius:0; background:#000; box-shadow:none; height:100vh}
+.carousel-track{display:flex;transition:transform .45s ease; height:100%}
+.carousel-track img{flex:0 0 100%; width:100%; height:100%; object-fit:cover; object-position:center center; display:block}
+.carousel img{display:block}
+#prev, #next {position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.35);color:#fff;border:none;padding:12px 14px;font-size:28px;cursor:pointer;z-index:30}
+#prev{left:18px} #next{right:18px}
+#prev{left:8px} #next{right:8px}
+
+.intro{max-width:1100px;margin:18px auto;padding:18px;background:transparent}
+
+/* Albums page title styling */
+.albums-list h2{
+  font-family:'Playfair Display', serif;
+  text-align:center;
+  font-size:2.1rem;
+  margin:28px auto 8px;
+  letter-spacing:0.6px;
+  color:var(--accent);
+  font-weight:700;
+}
+.albums-list h2::after{
+  content:'';
+  display:block;
+  width:64px;
+  height:3px;
+  background:var(--accent);
+  margin:12px auto 0;
+  border-radius:2px;
+  opacity:0.12;
+}
+
+.albums-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1100px;margin:20px auto;padding:8px}
+.album-tile{background:var(--card);padding:0;border-radius:6px;box-shadow:0 6px 14px rgba(0,0,0,.04);text-decoration:none;color:inherit;position:relative;overflow:hidden}
+.album-thumb{width:100%;height:auto;display:block;object-fit:contain}
+/* overlay: centered, script font, artistic */
+.album-tile::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.36);opacity:0;transition:opacity .18s}
+.album-title{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(.96);margin:0;color:#fff;font-weight:700;text-align:center;opacity:0;transition:opacity .18s,transform .18s;text-shadow:0 2px 10px rgba(0,0,0,.6);font-family:'Great Vibes', cursive;font-size:1.9rem;pointer-events:none}
+.album-count{display:none}
+.album-tile:hover::before{opacity:1}
+.album-tile:hover .album-title{opacity:1;transform:translate(-50%,-50%) scale(1)}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:1100px;margin:18px auto;padding:8px}
+.gallery-grid img{width:100%;height:220px;object-fit:cover;border-radius:4px;cursor:pointer}
+
+.site-footer{padding:24px;text-align:center;color:var(--muted)}
+
+.contact{max-width:1400px;margin:20px auto;padding:18px;background:var(--card);border-radius:6px}
+
+.lightbox{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.8);z-index:1000}
+.lightbox img{max-width:95%;max-height:90%}
+.lb-close{position:absolute;top:20px;right:20px;background:transparent;border:0;color:white;font-size:26px;cursor:pointer}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.1);color:white;border:none;padding:16px 20px;font-size:32px;cursor:pointer;transition:background .2s}
+.lb-nav:hover{background:rgba(255,255,255,0.2)}
+.lb-prev{left:20px}
+.lb-next{right:20px}
+
+/* Respect the hidden attribute: keep lightbox hidden until JS removes [hidden] */
+.lightbox[hidden]{display:none !important}
+
+/* Album page title (match Albums page) */
+.album-view h2{
+  font-family:'Playfair Display', serif;
+  text-align:center;
+  font-size:2.1rem;
+  margin:28px auto 8px;
+  letter-spacing:0.6px;
+  color:var(--accent);
+  font-weight:700;
+}
+.album-view h2::after{
+  content:'';
+  display:block;
+  width:64px;
+  height:3px;
+  background:var(--accent);
+  margin:12px auto 0;
+  border-radius:2px;
+  opacity:0.12;
+}
+
+/* Selected work grid on front page */
+.selected-work-section{max-width:1400px;margin:20px auto;padding:8px}
+.selected-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.selected-grid a{display:block}
+.selected-thumb{width:100%;height:200px;object-fit:cover;border-radius:6px}
+
+@media (max-width:900px){
+  .selected-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media (max-width:600px){
+  .selected-grid{grid-template-columns:1fr}
+}
+
+@media (max-width:900px){
+  .albums-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+@media (max-width:600px){
+  .albums-grid{grid-template-columns:1fr;}
+  .carousel img{height:42vh}
+  .album-thumb{height:120px}
+}

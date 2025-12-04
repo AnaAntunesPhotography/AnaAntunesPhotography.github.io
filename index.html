@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ana Antunes — Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header overlay">
+    <h1 class="brand">Ana Antunes</h1>
+    <nav>
+      <a href="index.html">Ínicio</a>
+      <a href="albums.html">Albums</a>
+      <a href="#contact">Contactos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="carousel-section">
+      <div id="carousel" class="carousel">
+        <button id="prev" class="carousel-control">‹</button>
+        <div id="carousel-track" class="carousel-track" aria-live="polite"></div>
+        <button id="next" class="carousel-control">›</button>
+      </div>
+    </section>
+
+    <section class="selected-work-section">
+      <h2>Trabalhos Selecionados</h2>
+      <div id="selected-work" class="selected-grid"></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contactos</h2>
+      <p>Para informações, contactar: <a href="mailto:ana@example.com">anaantunes2003@gmail.com.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> Ana Antunes</small>
+  </footer>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button id="lb-close" class="lb-close">✕</button>
+    <button id="lb-prev" class="lb-nav lb-prev">‹</button>
+    <img id="lb-img" src="" alt="" />
+    <button id="lb-next" class="lb-nav lb-next">›</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

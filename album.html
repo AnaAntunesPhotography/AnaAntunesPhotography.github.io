@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Album — Ana Antunes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header overlay">
+    <h1 class="brand">Ana Antunes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="albums.html">Albums</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="album-view">
+      <h2 id="album-title">Album</h2>
+      <div id="gallery" class="gallery-grid"></div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button id="lb-close" class="lb-close">✕</button>
+    <img id="lb-img" src="" alt="" />
+  </div>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> Photography Portfolio</small>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{
+  "paisagens": {
+    "title": "Paisagens",
+    "images": [
+      "103.jpg",
+      "12.jpg",
+      "122.jpg",
+      "127.jpg",
+      "15.jpg",
+      "17.jpg",
+      "8.jpg",
+      "93.jpg",
+      "96.jpg",
+      "98.jpg",
+      "e28d1d8a-9160-41d6-8b9a-4ed6d4f37c55 (1).jpg",
+      "IMG_0822.jpg",
+      "IMG_0933.jpg",
+      "IMG_0935.jpg",
+      "IMG_0937.jpg",
+      "IMG_0938.jpg",
+      "IMG_1405 1.jpg",
+      "IMG_1417.jpg",
+      "IMG_1422.jpg",
+      "IMG_1435.jpg",
+      "IMG_1446.jpg",
+      "IMG_1466.jpg",
+      "IMG_1483.jpg",
+      "IMG_1484.jpg",
+      "IMG_1488.jpg",
+      "IMG_1489.jpg",
+      "IMG_1493.jpg",
+      "IMG_1496.jpg",
+      "IMG_1497.jpg",
+      "IMG_2057.jpg",
+      "IMG_2062.jpg",
+      "IMG_2071.jpg",
+      "IMG_2074.jpg",
+      "IMG_2078.jpg",
+      "IMG_2081.jpg",
+      "IMG_2090.jpg",
+      "IMG_2095.jpg",
+      "IMG_2103.jpg",
+      "IMG_2126.jpg",
+      "IMG_2128.jpg",
+      "IMG_2134.jpg",
+      "IMG_2137.jpg",
+      "IMG_2138.jpg"
+    ]
+  },
+  "produtos": {
+    "title": "Produtos",
+    "images": [
+      "18.jpg",
+      "IMG_1803.jpg",
+      "IMG_1808.jpg"
+    ]
+  },
+  "retratos": {
+    "title": "Retratos",
+    "images": [
+      "foto 9 editada.jpg",
+      "IMG_0529.jpg",
+      "IMG_0536.jpg",
+      "IMG_0537.jpg",
+      "IMG_0545.jpg",
+      "IMG_0547.jpg",
+      "IMG_0548.jpg",
+      "IMG_0550.jpg",
+      "IMG_0551.jpg",
+      "IMG_0808 (1).jpg",
+      "IMG_1504 (1).jpg"
+    ]
+  }
+}

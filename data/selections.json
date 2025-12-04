@@ -1,0 +1,22 @@
+{
+  "front-page": {
+    "title": "Front Page",
+    "images": [
+      "93.jpg",
+      "IMG_0938.jpg",
+      "IMG_1405 1.jpg",
+      "IMG_2137.jpg"
+    ]
+  },
+  "selected_work": {
+    "title": "Selected Work",
+    "images": [
+      "18.jpg",
+      "foto 9 editada.jpg",
+      "IMG_0935.jpg",
+      "IMG_1504 (1).jpg",
+      "IMG_1808.jpg",
+      "IMG_2090.jpg"
+    ]
+  }
+}
